@@ -13,8 +13,18 @@ console.log(numberOfFilms);
     - count - сюда передается ответ на первый вопрос
     - movies - в это свойство поместить пустой объект
     - actors - тоже поместить пустой объект
-    - genres - сюда поместить пустой массив
-    - privat - в это свойство поместить boolean(логическое) значение false
+    - genres - сюда поместить пустой массив 
+    - privat - в это свойство поместить boolean(логическое) значение false */
+
+    const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+    };
+
+ /*  
 3) Задайте пользователю по два раза вопросы:
     - 'Один из последних просмотренных фильмов?'
     - 'На сколько оцените его?'
@@ -25,13 +35,6 @@ console.log(numberOfFilms);
     }
 Проверить, чтобы все работало без ошибок в консоли */
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
 
 const a = prompt('Один из последних просмотренных фильмов?', ''),
       b = prompt('На сколько оцените его?', ''),
